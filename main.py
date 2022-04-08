@@ -1,6 +1,6 @@
 import random
 
-def Game():
+
 flag = True
 while flag:
   number = input("Type a number for an upper bound: ")
@@ -13,7 +13,6 @@ while flag:
     
 number_wanted = random.randint(1,number)
 guess = None
-
 
 while guess != number_wanted:
   guess = (input("guess a number between 0 and " + str(number) + ": "))
