@@ -21,7 +21,7 @@ def guess_number(number_wanted, top_range):
 def play_game(): 
   """Runs the game and uses the function guess_number. top_range must be greater than 0 or a value error will occur."""
   
-  top_range = int(input("Enter a number for the top range:  "))
+  top_range = int(input("Enter a number for the top range: "))
   if (top_range < 1):
     raise ValueError("top_range must be greater than 0")
   #if (top_range < 1):
