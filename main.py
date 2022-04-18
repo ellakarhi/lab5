@@ -19,10 +19,14 @@ def guess_number(number_wanted, top_range):
       print ("Thanks for playing! Come back again soon!")
       
 def play_game(): 
+  """Runs the game and uses the function guess_number. top_range must be greater than 0 or a value error will occur."""
+  
   top_range = int(input("Enter a number for the top range:  "))
   if (top_range < 1):
-    print("The top range must be greater than 0")
-    play_game()
+    raise ValueError("top_range must be greater than 0")
+  #if (top_range < 1):
+    #print("The top range must be greater than 0")
+    #play_game()
     
   number_wanted = random.randint(0, top_range)
   guess_number(number_wanted, top_range)
